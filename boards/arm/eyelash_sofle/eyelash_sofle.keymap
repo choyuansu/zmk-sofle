@@ -87,7 +87,7 @@
 &kp TAB     &kp Q         &kp W         &kp F         &kp P         &kp B        &kp DOWN         &kp J       &kp L         &kp U         &kp Y            &kp SEMI    &kp EQUAL
 &kp CAPS    &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G        &kp LEFT         &kp M       &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I      &hmr LGUI O &kp SQT
 &kp LBKT    &kp Z         &kp X         &kp C         &kp D         &kp V        &kp RIGHT        &kp K       &kp H         &kp COMMA     &kp DOT          &kp FSLH    &kp RBKT
-&kp C_MUTE  &kp LC(C)     &kp LC(V)     &kp ESC       &lt 1 SPACE   &kp TAB      &mkp LCLK        &kp ENTER   &lt 1 BSPC    &lt 2 DEL     &kp LC(PG_DN)    &kp LC(PG_UP)
+&kp C_MUTE  &kp K_COPY    &kp K_PASTE   &lt 1 SPACE   &kp ESC       &kp TAB      &mkp LCLK        &lt 2 DEL   &kp ENTER     &lt 1 BSPC    &kp LC(PG_DN)    &kp LC(PG_UP)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -102,7 +102,7 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         layer_2 {
