@@ -87,7 +87,7 @@
 &kp TAB     &kp Q         &kp W         &kp F         &kp P         &kp B        &kp DOWN         &kp J       &kp L         &kp U         &kp Y            &kp SEMI    &kp EQUAL
 &lt 1 CAPS  &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G        &kp LEFT         &kp M       &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I      &hmr LGUI O &kp SQT
 &kp LSHFT   &kp Z         &kp X         &kp C         &kp D         &kp V        &kp RIGHT        &kp K       &kp H         &kp COMMA     &kp DOT          &kp FSLH    &kp BSLH
-&kp C_MUTE  &kp LCTRL     &kp LALT      &lt 1 SPACE   &kp ESC       &kp TAB      &kp PSCRN        &lt 2 DEL   &kp ENTER     &lt 1 BSPC    &kp LBKT         &kp RBKT
+&kp C_MUTE  &kp LCTRL     &kp LALT      &lt 1 SPACE   &kp ESC       &kp LBKT     &kp PSCRN        &lt 2 RBKT   &kp ENTER    &lt 1 BSPC    &kp LC(PG_DN)    &kp LC(PG_UP)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -95,11 +95,11 @@
 
         layer_1 {
             bindings = <
-&kp ESC     &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &kp LC(HOME)      &kp F6           &kp F7           &kp F8      &kp F9        &kp F10           &kp F11
-&trans      &trans           &trans          &trans           &trans           &trans             &kp LC(END)       &trans           &trans           &trans      &kp F11       &kp F12           &kp F12
-&trans      &trans           &trans          &trans           &trans           &trans             &kp LC(LA(MINUS)) &trans           &kp LEFT         &kp DOWN    &kp UP        &kp RIGHT         &trans
-&trans      &trans           &trans          &trans           &trans           &trans             &kp LC(LS(MINUS)) &trans           &kp HOME         &kp PG_DN   &kp PG_UP     &kp END           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &kp PSCRN         &trans           &kp DEL          &trans      &kp LC(PG_DN) &kp LC(PG_UP)
+&kp ESC     &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &trans            &kp F6           &kp F7           &kp F8      &kp F9            &kp F10           &kp F11
+&trans      &trans           &trans          &trans           &trans           &trans             &trans            &trans           &trans           &trans      &kp F11           &kp F12           &kp F12
+&trans      &trans           &trans          &trans           &trans           &trans             &trans            &trans           &kp LEFT         &kp DOWN    &kp UP            &kp RIGHT         &trans
+&trans      &trans           &trans          &trans           &trans           &trans             &trans            &trans           &kp HOME         &kp PG_DN   &kp PG_UP         &kp END           &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &trans            &trans           &trans           &kp DEL     &kp LC(LA(MINUS)) &kp LC(LS(MINUS))
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
